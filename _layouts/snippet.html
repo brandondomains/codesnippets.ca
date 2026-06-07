@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<section class="snippet-page">
+  <div class="snippet-page-header">
+    <p class="eyebrow">{{ page.category }} · {{ page.language }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.description }}</p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ page.gist_url }}" rel="noopener" target="_blank">View the Gist</a>
+      <a class="button secondary" href="{{ '/snippets/' | relative_url }}">Back to snippets</a>
+    </div>
+  </div>
+
+  <div class="detail-panel">
+    <article class="detail-card">
+      <h2>Use case</h2>
+      {{ content }}
+      <div class="tags">
+        {% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}
+      </div>
+    </article>
+    <aside class="detail-card">
+      <h3>Snippet details</h3>
+      <dl class="meta-list">
+        <div><dt>Language</dt><dd>{{ page.language }}</dd></div>
+        <div><dt>Category</dt><dd>{{ page.category }}</dd></div>
+        <div><dt>Difficulty</dt><dd>{{ page.difficulty }}</dd></div>
+        <div><dt>Source</dt><dd><a href="{{ page.gist_url }}" rel="noopener" target="_blank">GitHub Gist</a></dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <section class="section">
+    <div class="section-heading split">
+      <div>
+        <p class="eyebrow">Related</p>
+        <h2>More snippets in {{ page.category }}.</h2>
+      </div>
+    </div>
+    <div class="related-list">
+      {% assign related = site.snippets | where: 'category', page.category %}
+      {% for snippet in related limit: 4 %}
+        {% unless snippet.url == page.url %}<a href="{{ snippet.url | relative_url }}">{{ snippet.title }}</a>{% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+</section>

@@ -1,0 +1,15 @@
+<article class="snippet-card" data-snippet-card data-category="{{ include.snippet.category | downcase }}" data-search="{{ include.snippet.title | append: ' ' | append: include.snippet.description | append: ' ' | append: include.snippet.category | append: ' ' | append: include.snippet.language | append: ' ' | append: include.snippet.tags | join: ' ' | downcase | escape }}">
+  <div class="snippet-topline">
+    <span>{{ include.snippet.language }}</span>
+    <span>{{ include.snippet.difficulty }}</span>
+  </div>
+  <h3><a href="{{ include.snippet.url | relative_url }}">{{ include.snippet.title }}</a></h3>
+  <p>{{ include.snippet.description }}</p>
+  <div class="tags">
+    {% for tag in include.snippet.tags %}<span>{{ tag }}</span>{% endfor %}
+  </div>
+  <div class="snippet-actions">
+    <a href="{{ include.snippet.url | relative_url }}">Details</a>
+    <a href="{{ include.snippet.gist_url }}" rel="noopener" target="_blank">View Gist</a>
+  </div>
+</article>

@@ -1,0 +1,17 @@
+title: CodeSnippets.ca
+description: Practical developer snippets, patterns, and utilities linking to reusable GitHub Gists.
+url: "https://codesnippets.ca"
+baseurl: ""
+permalink: pretty
+
+collections:
+  snippets:
+    output: true
+    permalink: /snippets/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "snippets"
+    values:
+      layout: snippet

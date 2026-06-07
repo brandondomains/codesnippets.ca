@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Node: Read a Large File Line-by-Line",
+    "slug": "node-read-large-file-line-by-line",
+    "language": "JavaScript",
+    "category": "Node.js",
+    "difficulty": "Beginner",
+    "tags": [
+      "node",
+      "streams",
+      "files"
+    ],
+    "description": "Read a large text file safely using Node.js streams and async iteration without loading the entire file into memory.",
+    "gist_url": "https://gist.github.com/your-username/node-read-large-file-line-by-line",
+    "featured": true
+  },
+  {
+    "title": "Node: Streaming JSONL Transform",
+    "slug": "node-streaming-jsonl-transform",
+    "language": "JavaScript",
+    "category": "Data Processing",
+    "difficulty": "Intermediate",
+    "tags": [
+      "jsonl",
+      "streams",
+      "cli"
+    ],
+    "description": "Filter and map JSONL records from standard input while respecting stream backpressure.",
+    "gist_url": "https://gist.github.com/your-username/node-streaming-jsonl-transform",
+    "featured": true
+  },
+  {
+    "title": "Python: SQLite Migrations Table",
+    "slug": "python-sqlite-migrations-table",
+    "language": "Python",
+    "category": "Databases",
+    "difficulty": "Intermediate",
+    "tags": [
+      "sqlite",
+      "migrations",
+      "no-deps"
+    ],
+    "description": "A small dependency-free pattern for tracking and running SQLite migrations in order.",
+    "gist_url": "https://gist.github.com/your-username/python-sqlite-migrations-table",
+    "featured": true
+  },
+  {
+    "title": "Node: Split a Large JSONL File",
+    "slug": "node-split-large-jsonl-file",
+    "language": "JavaScript",
+    "category": "Data Processing",
+    "difficulty": "Intermediate",
+    "tags": [
+      "jsonl",
+      "files",
+      "chunks"
+    ],
+    "description": "Split a JSONL file into smaller chunks by line count or approximate file size.",
+    "gist_url": "https://gist.github.com/your-username/node-split-large-jsonl-file",
+    "featured": false
+  },
+  {
+    "title": "Node: Deduplicate JSONL Records by Key",
+    "slug": "node-deduplicate-jsonl-records-by-key",
+    "language": "JavaScript",
+    "category": "Data Processing",
+    "difficulty": "Intermediate",
+    "tags": [
+      "jsonl",
+      "dedupe",
+      "streams"
+    ],
+    "description": "Remove duplicate JSONL records using a selected key while streaming records from input to output.",
+    "gist_url": "https://gist.github.com/your-username/node-deduplicate-jsonl-records-by-key",
+    "featured": false
+  },
+  {
+    "title": "Node: Convert JSONL to CSV",
+    "slug": "node-convert-jsonl-to-csv",
+    "language": "JavaScript",
+    "category": "Data Conversion",
+    "difficulty": "Beginner",
+    "tags": [
+      "jsonl",
+      "csv",
+      "export"
+    ],
+    "description": "Convert selected JSONL fields to CSV with safe escaping for commas, quotes, and newlines.",
+    "gist_url": "https://gist.github.com/your-username/node-convert-jsonl-to-csv",
+    "featured": false
+  },
+  {
+    "title": "Node: Convert CSV to JSONL",
+    "slug": "node-convert-csv-to-jsonl",
+    "language": "JavaScript",
+    "category": "Data Conversion",
+    "difficulty": "Beginner",
+    "tags": [
+      "csv",
+      "jsonl",
+      "type-coercion"
+    ],
+    "description": "Read a delimited file and output JSONL records with selected columns and basic type coercion.",
+    "gist_url": "https://gist.github.com/your-username/node-convert-csv-to-jsonl",
+    "featured": false
+  },
+  {
+    "title": "SQL: Keyset Pagination Pattern",
+    "slug": "sql-keyset-pagination-pattern",
+    "language": "SQL",
+    "category": "Databases",
+    "difficulty": "Intermediate",
+    "tags": [
+      "sql",
+      "pagination",
+      "performance"
+    ],
+    "description": "Use keyset pagination instead of offset pagination for stable, fast database browsing.",
+    "gist_url": "https://gist.github.com/your-username/sql-keyset-pagination-pattern",
+    "featured": false
+  },
+  {
+    "title": "Bash: Retry a Command with Backoff",
+    "slug": "bash-retry-command-with-backoff",
+    "language": "Bash",
+    "category": "CLI Utilities",
+    "difficulty": "Beginner",
+    "tags": [
+      "bash",
+      "retry",
+      "automation"
+    ],
+    "description": "Retry a shell command with incremental delays for scripts that interact with unreliable services.",
+    "gist_url": "https://gist.github.com/your-username/bash-retry-command-with-backoff",
+    "featured": false
+  },
+  {
+    "title": "Go: Minimal HTTP Client with Timeout",
+    "slug": "go-minimal-http-client-timeout",
+    "language": "Go",
+    "category": "HTTP",
+    "difficulty": "Beginner",
+    "tags": [
+      "go",
+      "http",
+      "timeout"
+    ],
+    "description": "A compact Go HTTP client pattern with timeout handling, status checks, and clear errors.",
+    "gist_url": "https://gist.github.com/your-username/go-minimal-http-client-timeout",
+    "featured": false
+  },
+  {
+    "title": "JavaScript: Debounce Utility",
+    "slug": "javascript-debounce-utility",
+    "language": "JavaScript",
+    "category": "Frontend",
+    "difficulty": "Beginner",
+    "tags": [
+      "javascript",
+      "debounce",
+      "ui"
+    ],
+    "description": "A small debounce utility for search inputs, resize handlers, and other repeated browser events.",
+    "gist_url": "https://gist.github.com/your-username/javascript-debounce-utility",
+    "featured": false
+  },
+  {
+    "title": "Python: Atomic JSON Write",
+    "slug": "python-atomic-json-write",
+    "language": "Python",
+    "category": "Files",
+    "difficulty": "Beginner",
+    "tags": [
+      "python",
+      "json",
+      "files"
+    ],
+    "description": "Write JSON safely by saving to a temporary file first and then replacing the destination atomically.",
+    "gist_url": "https://gist.github.com/your-username/python-atomic-json-write",
+    "featured": false
+  }
+]
